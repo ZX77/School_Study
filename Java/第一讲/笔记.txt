@@ -1,0 +1,75 @@
+J2SE:标准版
+	开发java桌面应用程序和低端的服务器应用程序
+
+J2EE:企业版
+	为构建企业级的服务应用提供了开发和运行平台,包括了J2SE
+
+J2ME:微型版
+	用于嵌入式的消费产品中，如移动电话、掌上电脑和其他的无线设备等
+
+
+java是面向对象的程序设计语言
+
+
+
+java运行机制
+1/通过编译器将java源程序（.java）编译成字节码文件（.class）
+2/通过解释器读取字节码文件（.class）并运行
+
+
+
+//开发第一个java程序
+1/安装JDK   JDK运行环境
+	javac 编译器：将java文件编译成class文件
+	java 执行器 ：读取class文件
+	javadoc：生成java文件的帮助文档
+
+2/环境变量的配置 配置JDK让JDK命令可以被DOS读取
+	set :在dos命令下查看所有环境变量
+	
+	配置环境path 
+	2.1右键 我的电脑 - 属性 - 高级系统设置 - 环境变量
+		在系统变量中找到path环境变量 双击进入编辑模式
+	2.2 找到JDK的bin目录 并且把路径复制到path环境变量中去 用分号分隔	
+
+3/编写第一个java程序
+	3.1新建文本文档 后缀改成java
+	3.2编辑文件，编写代码：
+	public class Hello{
+		public static void main(String[] args){
+			System.out.println("Hello World!!你好！世界！");
+		}
+	}
+
+
+4/执行java文件
+	1、使用javac命令 将java文件编译成class文件
+		javac Hello.java
+
+	2、使用java命令 执行class文件
+		java Hello
+
+
+
+
+classpath环境变量：
+	指定class文件的路径 让java虚拟机去这个目录下加载class文件
+
+java_home 环境变量
+	 配置一个JDK路径  让其他变量可以使用这个路径
+	 使用%java_home% 来代替这个路径	
+
+
+javadoc Hello.java 生成这个类的说明文档
+
+
+JVM java虚拟机
+	1、代码的装入
+	2、代码的校验
+	3、代码的执行
+
+
+面向对象的特性：
+	1、继承
+	2、多态
+	3、封装
